@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+    #tdiv{
+        vertical-align: center;
+        height:1000px;
+    }
+    div{
+        /*width:auto;*/
+        text-align: center;
+        background-image: url(http://img.zcool.cn/community/01af5f58eab95da8012049ef00f303.jpg@1280w_1l_2o_100sh.jpg);
+    }
+    .div1{
+        margin:20px auto;
+        width:1150px;
+        border:1px dashed #000;
+        background: white;
+    }
+        input{
+            width: 100px;
+            height: 30px;
+            margin: 0 5px;
+            border-radius: 10%;
+            text-align: center;
+            border:1px solid salmon;
+            background: khaki;
+        }
+        h3{
+            text-align: center;
+        }
+        table{
+            border:2px solid salmon;
+            border-collapse: collapse;
+            width:800px;
+       
+       }
+       .spanBody{
+            width: 120px;
+            height: 30px;
+            margin: 0 5px;
+            padding: auto 10px;
+            border-radius: 10%;
+            text-align: center;
+            border:1px solid salmon;
+            background: khaki;        
+       }
+
+        th,td{
+            border:2px solid salmon;
+            text-align: center;
+              }
+        .divid{
+            width:160px;
+        }
+        .gender{
+            width:100px;
+            font-size: 5px;
+            float:right;
+        }
+        .r1{
+            width:10px;
+            height:10px;
+        }
+        .p1{
+            width:1150px;
+            text-align: center;
+        }
+        .c1{
+            width: 900px;
+            height: 30px;
+            background: none;
+        }
+        .btn1{
+            width:80px;
+            background: red;
+            margin-right: 10px;
+        }
+        .bbtn1{
+            width:80px;
+            background: red;
+            margin-right: 10px;
+        }
+        .btn2{
+            width: 80px;
+            background: red;
+            margin-right: 10px;
+        }
+        .bd1{
+            width:200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="tdiv">
+        <div class="div1">
+            <h1>英雄联盟数据库操作窗口</h1>
+            
+        </div>
+
+        <div class="div1">
+             <form action='login/add' method="post">
+             <h3>批量导入英雄信息</h3>
+            <p>
+            <input type="text" name="hinfo" placeholder="请输入文件名称(默认为heroinfos.txt文件)" class="c1">
+            <input type="SUBMIT" value="提交" name="change"  class="btn2">
+            <input name="RESET" type="RESET" value="重置" class="bbtn1">
+            </p>
+
+        </form>
+        </div>
+
+        <div class="div1">
+            <form action='login/search' method="post">
+            <h3>查询区</h3>
+            <p>
+                <input type="text" name="hinfo" placeholder="输入查询关键词" class="c1">
+                <input type="SUBMIT" value="查询" name="search"  class="btn2">
+                <input name="RESET" type="RESET" value="重置" class="bbtn1">
+            </p>
+        </form>
+        </div>
+
+        <div class="div1">
+             <form action='login/add' method="post">
+             <h3>添加区</h3>
+            <p>
+            <input type="text" name="hid" placeholder="英雄ID(10000以内)" class="divid">
+            <input type="text" name="hname" placeholder="英雄名字">
+            <input type="text" name="hattack" placeholder="攻击方式">
+            <input type="text" name="hposition" placeholder="战斗位置">
+            <input type="text" name="hbackground" placeholder="背景链接" class="bd1">
+            <span class="spanBody">
+                &nbsp;&nbsp;性别  
+                <input type="radio" name="hgender" value="男" class="r1" checked>  男  
+                <input type="radio" name="hgender" value="女" class="r1" >  女&nbsp;&nbsp;
+            </span>
+                <input type="SUBMIT" value="添加" name="add"  class="btn2">
+                <input name="RESET" type="RESET" value="重置" class="btn1">
+            </p>
+        </form>
+        </div>
+     
+
+        <div class="div1">
+             <form action='login/change' method="post">
+             <h3>修改区</h3>
+            <input type="text" name="hid" placeholder="英雄ID(10000以内)" class="divid">
+            <input type="text" name="hname" placeholder="英雄名字">
+            <input type="text" name="hattack" placeholder="攻击方式">
+            <input type="text" name="hposition" placeholder="战斗位置">
+            <input type="text" name="hbackground" placeholder="背景链接" class="bd1">
+            <span class="spanBody">
+                &nbsp;&nbsp;性别  
+                <input type="radio" name="hgender" value="男" class="r1" checked>  男  
+                <input type="radio" name="hgender" value="女" class="r1" >  女&nbsp;&nbsp;
+            </span>
+            <input type="SUBMIT" value="修改" name="change"  class="btn2">
+            <input name="RESET" type="RESET" value="重置" class="btn1">
+            </p>
+
+        </form>
+        </div>
+     
+
+         <div class="div1">
+             <form action='login/delete' method="post">
+             <h3>删除区</h3>
+            <p>
+            <input type="text" name="hid" placeholder="英雄ID(10000以内)" class="divid">
+            <input type="text" name="hname" placeholder="英雄名字">
+            <input type="text" name="hattack" placeholder="攻击方式">
+            <input type="text" name="hposition" placeholder="战斗位置">
+            <input type="text" name="hbackground" placeholder="背景链接" class="bd1">
+            <span class="spanBody">
+                &nbsp;&nbsp;性别  
+                <input type="radio" name="hgender" value="男" class="r1" checked>  男  
+                <input type="radio" name="hgender" value="女" class="r1" >  女&nbsp;&nbsp;
+            </span>
+            <input type="SUBMIT" value="删除" name="delete"  class="btn2">
+            <input name="RESET" type="RESET" value="重置" class="btn1">
+            </p>
+
+        </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+创建库
+create database herodb2 default charset=utf8;
+use herodb2;
+
+注册表(user)
+user: id  username  passwd
+
+create table user(
+  id int primary key auto_increment,
+  username varchar(16)  not null,
+  passwd varchar(32) not null,
+  unique key user_username (username)
+); 
+ 
+  
+英雄表（heros）
+             
+heros: id  id1  nameattack  position  background  gender
+
+create table heros(
+  id int primary key auto_increment,
+  hid int(4) not null,
+  hname varchar(100) not  null,
+  hattack varchar(100) not null,
+  hposition varchar(100) not null,
+  hbackground varchar(100) not null,
+  hgender enum('男','女'),
+  unique key heros_hid (hid),
+  unique key heros_hname (hname)
+);
+  
+				
+
+插入数据
+  insert into user(username,passwd) values(1,'李白','123');
+  insert into heros(id1,name,attack,position,background,gender)values(001,'暗裔剑魔','近程','上单','http://lol.qq.com/data/info-  defail.shtml?id=Aatrox','男');
+
+insert into heros (hid,hgender,hposition,hname,hattack) values (['12'],['男'],['上单'],['关羽'],['近程']);
+
+  insert into heros (hbackground,hgender,hid,hname,hattack) values (['https://baike.baidu.com/item/%E5%85%B3%E7%BE%BD/17338?fr=aladdin'],['男'],['12'],['关羽'],['近程']);
+
+
+insert into heros (hid,hgender,hbackground,hposition,hname,hattack) values ('12','男','https://baike.baidu.com/item/%E5%85%B3%E7%BE%BD/17338?fr=aladdin','上单','关羽','近程');
+
+
+/home/tarena/lessons/VMS/project/apps/static/
+
+insert into heros (hid,hname,hattack,hposition,hbackground,hgender)                values('141',''荆棘之兴'',''远程'',''辅助/中单'',''http://lol.qq.com/data/info-defail.shtml?id=Zyra'',''女'')

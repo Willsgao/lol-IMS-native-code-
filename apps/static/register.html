@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  body{
+    background:rgb(79,94,127);
+  }
+  div{
+    width:800px;
+    height:800px;
+    margin:0 auto;
+    background:rgb(204,232,255);
+    text-align: center;
+  }
+    h1{
+        height:50px;   
+        position:relative;
+        top:100px;
+/*        font-family: '微软雅黑';*/
+    }
+    table{
+        text-align: center;
+        position:relative;
+        top:200px;
+        left:200px;
+    }
+    .spanText{
+        float: left;
+        width: 80px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 20px;
+        color: #999;
+        font-size: 16px;
+        font-family: '微软雅黑';
+    }
+    .uText{
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  border:1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  color: #555;
+  padding: 0 12px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+    td{
+    margin-top : 20px;
+    height: 40px;
+
+  }
+    .login,.regist{
+  box-sizing: border-box;
+  width: 100px;
+  height: 39px;
+  border:1px solid #64a131;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top:10px;
+  color: #7bae55;
+  background-color: #f5ffed;
+  line-height: 39px;
+}
+.login{
+  color: white;
+  background-color: #64a131;
+  float: right;
+}
+.regist{
+  color: #64a131;
+  margin-left: 100px;
+  float: left;
+}
+  
+  </style>
+  
+ </head>
+ <body>
+ <div>
+  <form action='register' method='post'>
+    <h1>英雄联盟注册系统</h1>
+    <table>
+      <tr>
+        <td>
+          <span class="spanText">用户名</span>
+          <input type="text" name="username" class="uText">
+        </td>
+      </tr>
+      <tr>
+          <td>
+          <span class="spanText">密 &nbsp;&nbsp;码</span>
+          <input type="password" name="passwd" class="uText" placeholder="请输入6-20位号码字符">
+        </td>
+      </tr>
+      <tr>
+      <td>
+      <input type='submit' value='注册' class="regist">
+      <a href="./heroindex.html" class="login">登录页面</a>
+      </td>
+      </tr>
+      </table>
+  </form>
+ 
+  </div>
+ </body>
+</html>

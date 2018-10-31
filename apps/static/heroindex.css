@@ -1,0 +1,134 @@
+/*清除 页面默认样式*/
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+/*外部容器 样式*/
+#container{
+	width: 100%;
+	height: 100%;
+	/*background:grey;*/
+	background-image: url(http://img.zcool.cn/community/01af5f58eab95da8012049ef00f303.jpg@1280w_1l_2o_100sh.jpg);
+	position: relative;
+}
+/*http://img.zcool.cn/community/01af5f58eab95da8012049ef00f303.jpg@1280w_1l_2o_100sh.jpg*/
+/*'/static/lol.jpg'*/
+/*标题样式*/
+#container h2{
+	font-weight: normal;
+	color: #999;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+/*左列模块*/
+.left{
+
+	/*background-image:url('xk.jpg');*/
+	float: left;
+}
+/*右列模块*/
+.right{
+
+	width: 440px;
+	height: 260px;
+	margin-left: -220px;
+	margin-top: -140px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: white;
+	border-radius: 5px;
+}
+/*表单样式*/
+.right p{
+	margin-top : 20px;
+	height: 40px;
+
+}
+.right .spanText{
+	float: left;
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-left: 20px;
+	color: #999;
+	font-size: 16px;
+
+}
+.right .uText{
+	width: 300px;
+	height: 40px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	outline: none;
+	font-size: 16px;
+	color: #555;
+	padding: 0 12px;
+	border: 1px #ccc solid;
+	border-radius: 5px;
+}
+/*按钮样式*/
+.right .isSaved input{
+	width: 18px;
+	height: 18px;
+	/*行内块元素与左右文本的对齐方式*/
+	vertical-align: middle;
+}
+.right .isSaved{
+	margin-left: -20px; 
+	color: #999;
+	float: left;
+}
+.right .forget{
+	float: right;
+	margin-right: 40px;
+}
+.forget a{
+	color: #999;
+}
+.login,.regist{
+	box-sizing: border-box;
+	width: 100px;
+	height: 39px;
+	border:1px solid #64a131;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #7bae55;
+	background-color: #f5ffed;
+	line-height: 39px;
+}
+.login{
+	color: white;
+	background-color: #64a131;
+	
+	float: left;
+}
+.regist{
+	color: #64a131;
+	
+	margin-right: 40px;
+	float: right;
+}
+/*定位布局*/
+.left{
+	position: relative;
+}
+.left a{
+	width:153px;
+	height:48px;
+	box-sizing: border-box;
+	border:1px solid #64a131;
+	color: #64a131;
+	text-decoration:none;
+	text-align: center;
+	line-height: 48px; 
+	background:white;
+	position: absolute;
+	border-radius: 6px;
+	left: 173px;
+	bottom: 22px;
+}
